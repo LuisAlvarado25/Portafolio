@@ -1,0 +1,75 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-nav {
+  font-size: 2rem;
+}
+div[id] {
+  scroll-margin-top: 50px;
+}
+.banner-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 320px;
+  background: url(../Pictures/a.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-area h2 {
+  font-size: 5rem;
+  margin-left: 10px;
+  padding: 0;
+  color: #fff;
+}
+.banner-area h2 span {
+  color: rgb(0, 0, 0);
+}
+#About p {
+  text-align: justify;
+}
+.Technologics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  height: calc(100vh - 50px);
+}
+.card {
+  display: flex;
+  height: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1); /* Cambia el tamaño del elemento al hacer hover */
+  filter: brightness(150%) contrast(150%);
+}
+.img {
+  filter: brightness(80%) contrast(80%);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+  .banner-area h2 {
+    font-size: 3rem;
+    margin-left: 10px;
+    padding: 0;
+    color: #fff;
+  }
+}
